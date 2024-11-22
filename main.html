@@ -1,36 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 
 <head>
-    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <form action="submit-feedback" method="POST">
-      
-        <label for="name">Name</label>
-        <input type="Text" id="name" name="name" minlength="3",maxlength="50" required>
-        <br><br>
+	<form action="/submit-form" method="post">
 
-      
-        <label for="portfolio">Portfolio</label>
-        <input type="URL" id="portfolio" name="portfolio" required>
-        <br><br>
+		<h1>Feedback Form</h1>
 
-        <!-- Favorite Color Input -->
-        <label for="favColor">Favorite Color</label>
-        <input type="color" id="favColor" name="favColor" required>
-        <br><br>
+		<label for="name">Name</label>
 
-        <!-- Likeness Input -->
-        <label for="likeness">Likeness</label>
-        <input type="Range" id="likeness" name="likeness" min="1",max="100" required>
-        <br><br>
+		<input id="name" type="text" minlength="3" maxlength="50" required>
 
-       
-    </form>
+		<br>
 
-    <script type="text/javascript" src="./script.js"></script>
+		<label for="portfolio">Portfolio</label>
+
+		<input id="portfolio" type="url" required>
+
+		<br>
+
+		<label for="favColor">Favorite Color</label>
+
+		<input id="favColor" type="color">
+
+		<br>
+
+		<label for="likeness">Likeness</label>
+
+		<input id="likeness" type="range" min="1" max="100">
+
+	</form>
+    <script type="text/javascript" src="./script.js">
+</script>
+
 </body>
 
 </html>
